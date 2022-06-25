@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             screens: {
+                'lg': '1440px',
+             },
+
+             spacing: {
+                '100':"600px"
+
+             },
+
+             colors: {
+                'very-dark-blue': 'hsl(243, 87%, 12%)',
+                'desaturated-blue': 'hsl(238, 22%, 44%)',
+              },
+              fontFamily: {
+                'rale': ['Raleway'],
+                'sans': ['Open Sans'],
+              }
+
+           
+
+
+    
+              
+
+
+
+            }
+          }
+        }
+
+      </script>
+
+
+    <title>Kylo</title>
+
+</head>
+
+<body class=" font-sans font-normal text-1xl lg: text-4xl">
+    <header class="p-6  lg:p-10 text-xl ">
+        <nav class="flex justify-between lg:text-black">
+            <div>
+             <img class="w-20 lg:w-60"src="/images/logo.svg" alt="imh">
+            </div>
+            
+    
+            <ul class=" flex gap-x-4 text-xs md:text-2xl lg:gap-x-10">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#signin">Sign In</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+
+    <main class="w-screen">
+        <section class="p-8 grid lg:grid-cols-2 my-20 lg:p-10 text-black text-xl gap-x-7 mt-0">
+
+            <div class="lg:order-last">
+                <img  src="/images/illustration-1.svg" alt="img1">
+            </div>
+
+            <div class="lg:p-3">
+                <h1 class="text-2xl font-sans font-bold my-5  p-1 lg:text-4xl ml-2 pt-5">All your files in one secure location accessible to anywhere</h1>
+                <p class="my-7 pl-2 text-xl  lg:text-lg ">Fylo stores your most important files in one secure location. Access them wherever you need
+                    share  and collaborate with friends, family and coworkers.
+                </p>
+                <form class="w-4/5 text-center p-3 lg:flex justify-between pl-0">
+                    <input class="border-2 text-left w-80 h-10 p-6 mb-2 lg:mx-3 text-xl" type="text" name="email" placeholder="Enter your email" > <br>
+                    <button class="border bg-blue-500 text-white w-80 h-10 lg:h-15  text-xl">Get Started</button>
+                </form>
+            </div>
+
+
+
+            
+       </section>
+
+    
+
+
+        <section class="p-8 grid lg:grid-cols-2 my-20 lg:p-10 text-black text-xl gap-x-7 mt-0  " style="background-image: url(/images/bg-curve-desktop.svg)">
+
+            <div class="lg:order-last p-5">
+                <img  src="/images/illustration-2.svg" alt="image2">
+            </div>
+
+            <div class="lg:m-7">
+                <h1 class="text-1xl text-left font-bold my-5 lg:text-4xl">Stay productive, wherever you are</h1>
+                <p class="my-5">Never let location be an issue when accessing your files. Fylo has you
+                    covered for all of your file storage needs
+                </p>
+
+                <p class="my-5">Securely share files and folders with friends and colleagues for live collaborations.
+                    No email attachment required!
+                </p>
+
+                <a class=" block text-center text-green-500 " href="#">See how Fylo works</a>
+                 <div class="border-b mt-2 text-center border-green-500"> </div>
+
+                <div class="border-2 p-6 m-7 bg-white">
+                    <p>
+                        Fylo has improved our team productivity by an order of magnitude. Since
+                        making the switch our team has become a well-oiled collaboration machine.
+                    </p>
+                    <div class="flex">
+                        <span class="m-2"><img class="w-7 rounded-full" src="/images/avatar-testimonial.jpg" alt="testi"></span>
+                        <p class="inline-block"><strong>Kyle Burton</strong><br>Founder & CEO, Huddle</p>
+                    </div>
+                    
+                   
+                </div>
+             </div>
+                
+
+           
+            
+        </section>
+
+
+        <section class="bg-desaturated-blue  p-5 h-96 text-center text-white grid lg:grid-cols-2 gap-x-7 text-left text-xl items-center">
+            <div class="lg:text-left">
+            <h1 class="font-bold text-3xl mb-5 lg:m-5">Get early access today </h1>
+            <p class="m-5 lg:">It only takes a minute to sign up and our free starter tier is extremely generous. 
+                If you have any questions, our support team would be happy to help you. </p>
+            </div>
+
+            <div class="text-center">
+                <form class="p-3">
+                    <input class="border-2 text-left w-60 h-10 p-6 mb-2 lg:w-96 " type="text" name="email" placeholder="email@example.com" > <br>
+                    <button class="border bg-blue-500 text-white w-60 h-10">Get Started</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-very-dark-blue text-white text-xl p-6 h-100 lg:grid grid-cols-4 h-100 items-center text-xl">
+        <div>
+            <!-- <h1 class="text-6xl font-bold mb-7">Fylo</h1> -->
+            <div class="mb-4"><img class="w- 40 lg:w-60" src="/images/logo.svg" alt="logo"></div>
+
+            <div class="flex ">
+                <i class="m-3"><img src="/images/icon-phone.svg" alt="phone-icon"></i>
+                <p class="m-3">Phone number: 017898897098</p>
+            </div>
+            <div class="flex ">
+               <span class="m-3"><img src="/images/icon-email.svg" alt="phone-icon"></span>   
+                <span class="m-3">example@gmail.com</span>
+            </div>
+        </div>
+        <div>
+            <ul class="m-6">
+                <li class="m-4">About Us</li>
+                <li class="m-4">Jobs</li>
+                <li class="m-4">Press</li>
+                <li class="m-4">Blog</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="m-6">
+                <li class="m-4">Contact Us</li>
+                <li class="m-4">Terms</li>
+                <li class="m-4">Privacy</li>
+            </ul>
+        </div>
+        <div class="m-6 flex gap-x-7 justify-center">
+            <span>f</span>
+            <span>f</span>
+            <span>f</span>
+        </div>
+
+    </footer>
+</body>
+</html>
